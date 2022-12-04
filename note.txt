@@ -9,4 +9,22 @@
 +git commit -m "messeage commit"
 -git log: xem lại lịch sử commit
 -git status: Xem trạng thái hiện tại của thư mực làm việc, nó sẽ hiển thị những files thay đổi so với lần commit trước đó, đồng thời hiển thị trạng thái của các file đó như là đã được xác nhận để commit hay chưa
-git push origin master: Đẩy tất cả các commit lên trên remote repository
+-git push origin master: Đẩy tất cả các commit lên trên remote repository
+-git clone: Tải repository về máy tính
+-git checkout branch-name: Chuyển sang một branch (nhánh) khác
+-git checkout -b branch-name: Tạo branch
+
+-git pull: Kéo tất cả commit mới nhất củamoojt branch từ remote repository về local repository
+
+-git merge: Hợp nhất những commit ở một branch khác
+VD: branch hiện tại đang là feature-a, ta chạy lệnh git merge master
+=> Hợp nhất những commit branch master vào branch feature-a
+
+Quy trình xử lý nếu bị conflict (feature-a tạo pull request vào master)
+B1: checkout về branch master
+B2: chạy git pull, để cập nhật những commit mới nhất cho master ở local.
+B3: checkout về branch feature-a
+B4: chạy git merge master, để hợp nhất những commit của master vào feature-a
+B5: resolve conflict (thực hiện ở VSCode)
+B6: git add, git commit. git push
+B7: quay lại github để tạo pull request
