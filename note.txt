@@ -14,7 +14,7 @@
 -git checkout branch-name: Chuyển sang một branch (nhánh) khác
 -git checkout -b branch-name: Tạo branch
 
--git pull: Kéo tất cả commit mới nhất củamoojt branch từ remote repository về local repository
+-git pull: Kéo tất cả commit mới nhất của một branch từ remote repository về local repository
 
 -git merge: Hợp nhất những commit ở một branch khác
 VD: branch hiện tại đang là feature-a, ta chạy lệnh git merge master
