@@ -4,3 +4,5 @@
 +git add .: thêm toàn bộ tất cả các file bị thay đổi
 -git commit: Xác nhận và lưu trữ các file đã thay đổi
 +git commit -m "messeage commit"
+-git log: xem lại lịch sử commit
+-git status: Xem trạng thái hiện tại của thư mực làm việc, nó sẽ hiển thị những files thay đổi so với lần commit trước đó, đồng thời hiển thị trạng thái của các file đó như là đã được xác nhận để commit hay chưa
